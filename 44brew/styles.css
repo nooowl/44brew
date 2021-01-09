@@ -1,0 +1,149 @@
+body {
+    background-image: url("images/new_background.png");
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: Verdana, sans-serif;
+    margin:0
+}
+
+.body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title,
+.main {
+    background-color: white;
+    border: black solid 4px;
+
+}
+
+.title {
+    height: 50px;
+}
+
+h1 {
+    margin: 5px 0 5px 15px;
+}
+
+.contacts {
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: black;
+}
+
+.contacts img {
+    height: 70%;
+    margin: 2% 2% 2% 6%;
+}
+
+nav {
+    margin: 7px 0 7px 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigate {
+    height: 30px;
+    background-color: black;
+    padding: 5px 20px 5px 20px;
+    margin: 0;
+}
+
+.navigate li{
+    margin: auto 25px auto 25px;
+    display: inline;
+}
+
+.navigate a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    z-index: 2;
+}
+
+.gallery {
+}
+
+* {box-sizing: border-box}
+.slides {display: none}
+.first-slide {display: block}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.gallery img {
+    width: 80%;
+    margin: 3% 10%;
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

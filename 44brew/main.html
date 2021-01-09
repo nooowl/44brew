@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>44brew</title>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="body">
+    <div class="sticky">
+        <div class="title">
+            <div class="contacts">
+                <img src="images/instagram-logo.png" alt="">
+                <img src="images/telergam-logo.png" alt="">
+            </div>
+            <h1>44brew</h1>
+        </div>
+        <nav>
+            <ul class="navigate">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#beer">Пиво</a></li>
+                <li><a href="#presentation">Презентации</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="gallery">
+            <div class="slideshow-container">
+                <div class="slides first-slide fade">
+                    <img src="images/rheubarbarum_cult.jpg" alt="rheubarbarum_cult">
+                </div>
+                <div class="slides fade">
+                    <img src="images/hiroshima_shadow_1.jpg" alt="hiroshima_shadow_1">
+                </div>
+                <div class="slides fade">
+                    <img src="images/hiroshima_shadow_2.jpg" alt="hiroshima_shadow_2">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

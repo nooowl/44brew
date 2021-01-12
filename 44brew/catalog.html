@@ -19,46 +19,20 @@
         <nav>
             <ul class="navigate">
                 <li><a href="#about">О нас</a></li>
-                <li><a href="catalog.html">Пиво</a></li>
+                <li><a href="#beer">Пиво</a></li>
                 <li><a href="#presentation">Презентации</a></li>
             </ul>
         </nav>
     </div>
     <div class="main">
-        <div class="gallery">
-            <div class="slideshow-container">
-                <div class="slides first-slide fade">
-                    <img src="images/rheubarbarum_cult.jpg" alt="rheubarbarum_cult">
-                </div>
-                <div class="slides fade">
-                    <img src="images/hiroshima_shadow_1.jpg" alt="hiroshima_shadow_1">
-                </div>
-                <div class="slides fade">
-                    <img src="images/hiroshima_shadow_2.jpg" alt="hiroshima_shadow_2">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </div>
-        <div class="news-title"><h3>Новое пиво </h3></div>
-        <div class="news">
-            <div class="new beer">
+        <div class="list">
+            <div class="beer">
                 <img src="images/beer1.png" alt="1">
                 <div class="name"><a href="../beers/rheubarbarum.html">Rheubarbarum cult</a></div>
             </div>
-            <div class="new beer">
+            <div class="beer">
                 <img src="images/beer2.png" alt="2">
                 <div class="name"><a href="../beers/hiroshima.html">Hiroshima shadow</a></div>
-            </div>
-            <div class="new beer">
-                <img src="images/nothing.png" alt="3">
             </div>
         </div>
     </div>
@@ -69,9 +43,9 @@
         <div class="map" onclick="showMap()">Карта</div>
         <dialog class="map-dialog">
             <div class="inner">
-            <img src="images/map.png" alt="map">
-            <br>
-            <div class="close" onclick="closeMap()">Close</div>
+                <img src="images/map.png" alt="map">
+                <br>
+                <div class="close" onclick="closeMap()">Close</div>
             </div>
         </dialog>
         <br>

@@ -12,6 +12,10 @@ body {
     margin-right: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 .title,
 .main {
     background-color: white;
@@ -64,7 +68,6 @@ nav {
 .navigate a {
     color: white;
     font-size: large;
-    text-decoration: none;
     padding: 2px;
     margin: 5px;
 }
@@ -164,7 +167,7 @@ nav {
     text-align:center;
 }
 
-.news-title {
+.news-title, .beer-title {
     margin: 30px 0;
     padding: 0 30px;
     width: 100%;
@@ -173,35 +176,30 @@ nav {
     font-size: large;
 }
 
-.news {
+.news, .beer-card, .list {
     margin: 40px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.new {
-    width: 26%;
-
-}
-
-.beer1,
-.beer2 {
+.beer {
     border: black solid 2px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 26%;
 }
 
-.new img {
+.beer img {
     width: 80%;
     display: block;
     margin: auto;
 }
 
-.new .name, .map, .close {
+.beer .name, .map, .close {
     padding: 3px;
     margin: 2px;
 }
@@ -213,7 +211,7 @@ nav {
     padding: 3%;
 }
 
-.map {
+.map, .close {
     width: 55px;
 }
 
@@ -226,10 +224,39 @@ dialog {
     color: white;
 }
 
+dialog .inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 dialog img {
     width: 87%;
 }
 
 dialog .close {
     left: 50%;
+}
+
+.beer a, .title a {
+    color: black;
+}
+
+.pictures {
+    margin: 0 5%;
+}
+
+.pictures img {
+    height: 200px;
+    margin: 5px;
+}
+
+.pictures .picture3 {
+    width: 420px;
+    height: auto;
+}
+
+.description {
+    text-align: center;
+    margin: 20% 10% 20% 0;
+    font-size: large;
 }

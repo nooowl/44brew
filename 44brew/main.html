@@ -41,13 +41,41 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
-            <div style="text-align:center">
+            <div class="dots">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
+        <div class="news-title"><h3>Новое пиво </h3></div>
+        <div class="news">
+            <div class="new beer1">
+                <img src="images/beer1.png" alt="1">
+                <div class="name">Rheubarbarum cult</div>
+            </div>
+            <div class="new beer2">
+                <img src="images/beer2.png" alt="2">
+                <div class="name">Hiroshima shadow</div>
+            </div>
+            <div class="new beer3"></div>
+        </div>
+    </div>
+
+    <div class="end">
+        Телефон: 123456789
+        Россия, г. Санкт-Петербург
+        <div class="map" onclick="showMap()">Карта</div>
+        <dialog class="map-dialog">
+            <img src="images/map.png" alt="map">
+            <br>
+            <div class="close" onclick="closeMap()">Close</div>
+        </dialog>
+        <br>
+        design by polina
     </div>
 </div>
 </body>
+<script>
+    showSlides(slideIndex);
+</script>
 </html>

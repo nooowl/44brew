@@ -2,12 +2,12 @@ body {
     background-image: url("images/new_background.png");
     background-size: cover;
     background-attachment:fixed;
-    font-family: Verdana, sans-serif;
+    font-family: Corbel, monospace;
     margin:0
 }
 
 .body {
-    width: 80%;
+    width: 87%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -50,14 +50,14 @@ nav {
 }
 
 .navigate {
-    height: 30px;
+    height: 37px;
     background-color: black;
-    padding: 5px 20px 5px 20px;
-    margin: 0;
+    padding: 5px 20px;
+    margin: 5px 0;
 }
 
 .navigate li{
-    margin: auto 25px auto 25px;
+    margin: 3px 25px;
     display: inline;
 }
 
@@ -65,6 +65,12 @@ nav {
     color: white;
     font-size: large;
     text-decoration: none;
+    padding: 2px;
+    margin: 5px;
+}
+
+.navigate a:hover, .map:hover, .close:hover{
+    background-color: rgba(51, 163, 139,0.6);
 }
 
 .main {
@@ -72,6 +78,7 @@ nav {
     height: auto;
     display: inline-block;
     z-index: 2;
+    margin: 5px 0;
 }
 
 .gallery {
@@ -94,26 +101,31 @@ nav {
 }
 
 .prev, .next {
-    cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: black;
     font-weight: bold;
     font-size: 18px;
+}
+
+.prev, .next, .new .name, .navigate a, .map, .close {
+    cursor: pointer;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px;
+}
+
+.prev, .next, .new .name {
+    color: black;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+.prev:hover, .next:hover, .new .name:hover {
+    background-color: rgba(0,0,0,0.6);
 }
 
 .dot {
@@ -146,4 +158,78 @@ nav {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.dots {
+    text-align:center;
+}
+
+.news-title {
+    margin: 30px 0;
+    padding: 0 30px;
+    width: 100%;
+    border-bottom: black solid 3px;
+    border-top: black solid 3px;
+    font-size: large;
+}
+
+.news {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.new {
+    width: 26%;
+
+}
+
+.beer1,
+.beer2 {
+    border: black solid 2px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.new .name, .map, .close {
+    padding: 3px;
+    margin: 2px;
+}
+
+.end {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 3%;
+}
+
+.map {
+    width: 55px;
+}
+
+dialog {
+    position: fixed;
+    background-color: black;
+    padding: 30px;
+    width: 40%;
+    height: 70%;
+    color: white;
+}
+
+dialog img {
+    width: 87%;
+}
+
+dialog .close {
+    left: 50%;
 }

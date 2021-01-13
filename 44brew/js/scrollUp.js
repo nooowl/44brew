@@ -1,6 +1,6 @@
 "use strict";
 
-let scrollUpButton = document.querySelector('.scrollUp')
+let scrollUpButton = document.querySelector('.scroll-up')
 let navigationSize = document.querySelector('.sticky').offsetHeight
 
 window.addEventListener('scroll', trackScroll)

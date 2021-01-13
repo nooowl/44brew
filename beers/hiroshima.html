@@ -10,6 +10,15 @@
 </head>
 <body>
 <div class="disable" onclick="disable()"></div>
+<div class="form-container">
+    <form id="mailForm" class="mail-form">
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+        <input type="submit" class="form-submit-button" value="Отправить">
+    </form>
+</div>
 <div class="body">
     <div class="sticky">
         <div class="title">
@@ -28,7 +37,7 @@
         </nav>
     </div>
     <div class="main">
-        <div class="beer-title"> <h3>Hiroshima shadow</h3></div>
+        <div class="beer-title"><h3>Hiroshima shadow</h3></div>
         <div class="beer-card">
             <div class="pictures">
                 <img class="picture3" src="../44brew/images/beer2.png" alt="1">
@@ -57,10 +66,10 @@
         design by polina
     </div>
 </div>
-<div class="interactive scrollUp" onclick="scrollUp()">
+<div class="interactive scroll-up" onclick="scrollUp()">
     <i class="fa fa-chevron-up"></i>
 </div>
-<div class="interactive mailButton" onclick="disable()">
+<div class="interactive mail-button" onclick="disable()">
     <i class="fa fa-envelope-square"></i>
 </div>
 </body>

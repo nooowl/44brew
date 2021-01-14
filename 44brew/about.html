@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>44brew</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+    <link type="text/css" rel="stylesheet" href="css/about.css"/>
+    <link type="text/css" rel="stylesheet" href="css/interactive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="body">
+    <div class="sticky">
+        <div class="title">
+            <div class="contacts">
+                <img src="images/instagram-logo.png" alt="">
+                <img src="images/telergam-logo.png" alt="">
+            </div>
+            <h1><a href="main.html">44brew</a></h1>
+        </div>
+        <nav>
+            <ul class="navigate">
+                <li><a href="catalog.html">Пиво</a></li>
+                <li><a href="presentations.html">Презентации</a></li>
+                <li><a href="about.html" class="selected">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="about-container">
+            <img src="images/map.png" alt="map">
+            <div class="contacts-container">
+                <span>Телефон: 123456789</span>
+                <span>Россия, г. Санкт-Петербург</span>
+            </div>
+        </div>
+        <form id="mailForm" class="mail-form">
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+            <input type="submit" class="form-submit-button" value="Отправить">
+        </form>
+    </div>
+</div>
+<div class="interactive scroll-up" onclick="scrollUp()">
+    <i class="fa fa-chevron-up"></i>
+</div>
+</body>
+<script src="js/scrollUp.js"></script>
+<script src="js/mailForm.js"></script>
+</html>

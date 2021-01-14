@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/new_background.png");
+    background-image: url("../images/new_background.png");
     background-size: cover;
     background-attachment:fixed;
     font-family: Corbel, monospace;
@@ -73,6 +73,10 @@ nav {
 }
 
 .navigate a:hover, .map:hover, .close:hover{
+    background-color: rgba(51, 163, 139,0.6);
+}
+
+.selected {
     background-color: rgba(51, 163, 139,0.6);
 }
 
@@ -168,9 +172,9 @@ nav {
     width: 100%;
     min-height: 100%;
     z-index: 10;
-    background-color: darkgrey;
+    background-color: black;
+    opacity: 70%;
     cursor: pointer;
-    opacity: 80%;
     display: none;
 }
 

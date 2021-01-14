@@ -25,7 +25,9 @@ function send(e) {
     mailForm['email'].value = '';
     mailForm['message'].value = '';
 
-    disable();
+    if (disableElement !== null) {
+        disable();
+    }
 }
 
 mailForm.addEventListener('submit', send);

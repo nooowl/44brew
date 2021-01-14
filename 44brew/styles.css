@@ -76,6 +76,10 @@ nav {
     background-color: rgba(51, 163, 139,0.6);
 }
 
+.selected {
+    background-color: rgba(51, 163, 139,0.6);
+}
+
 .main {
     width: 100%;
     height: auto;

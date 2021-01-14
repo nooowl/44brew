@@ -5,7 +5,7 @@
     <title>Hiroshima shadow</title>
     <link type="text/css" rel="stylesheet" href="../styles.css"/>
     <script src="../main.js"></script>
-    <link type="text/css" rel="stylesheet" href="../44brew/css/interactive.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/interactive.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
 <div class="form-container">
     <form id="mailForm" class="mail-form">
         <label for="email">Email</label>
-        <input id="email" type="email">
+        <input id="email" type="email" required>
         <label for="message">Message</label>
-        <textarea id="message"></textarea>
+        <textarea id="message" required></textarea>
         <input type="submit" class="form-submit-button" value="Отправить">
     </form>
 </div>
@@ -76,6 +76,6 @@
 <script>
     showSlides(slideIndex);
 </script>
-<script src="../44brew/js/scrollUp.js"></script>
-<script src="../44brew/js/mailForm.js"></script>
+<script src="../js/scrollUp.js"></script>
+<script src="../js/mailForm.js"></script>
 </html>

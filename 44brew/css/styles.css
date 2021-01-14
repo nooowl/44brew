@@ -182,7 +182,7 @@ nav {
     text-align:center;
 }
 
-.news-title, .beer-title {
+.news-title, .beer-title, .feedback {
     margin: 30px 0;
     padding: 0 30px;
     width: 100%;
@@ -228,6 +228,7 @@ nav {
 
 .map, .close {
     width: 55px;
+    border: white solid 2px;
 }
 
 dialog {

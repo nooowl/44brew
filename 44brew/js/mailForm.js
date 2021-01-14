@@ -4,12 +4,12 @@ let disableElement = document.querySelector('.disable');
 let mailContainer = document.querySelector('.form-container');
 let mailForm = document.forms.mailForm;
 
-function disable() {
+function disable(form= mailContainer) {
     if (disableElement.style.display === "none" || disableElement.style.display === "") {
-        mailContainer.style.display = "flex";
+        form.style.display = "flex";
         disableElement.style.display = "flex";
     } else {
-        mailContainer.style.display = "none";
+        form.style.display = "none";
         disableElement.style.display = "none";
     }
 }
@@ -26,7 +26,7 @@ function send(e) {
     mailForm['message'].value = '';
 
     if (disableElement !== null) {
-        disable();
+        disable(mailContainer);
     }
 }
 

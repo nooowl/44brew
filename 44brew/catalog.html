@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>44brew</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+    <link type="text/css" rel="stylesheet" href="css/interactive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="disable" onclick="disable()"></div>
+<div class="form-container">
+    <form id="mailForm" class="mail-form">
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+        <input type="submit" class="form-submit-button" value="Отправить">
+    </form>
+</div>
+<div class="body">
+    <div class="sticky">
+        <div class="title">
+            <div class="contacts">
+                <a href="https://www.instagram.com/44brew/"> <img src="images/instagram-logo.png" alt=""></a>
+                <a href="https://t.me/n_o_w_l"> <img src="images/telergam-logo.png" alt=""></a>
+                <a href="https://untappd.com/44_brew/"> <img src="images/untappd-logo.png" alt=""></a>
+            </div>
+            <h1><a href="main.html">44brew</a></h1>
+        </div>
+        <nav>
+            <ul class="navigate">
+                <li><a href="catalog.html" class="selected">Пиво</a></li>
+                <li><a href="presentations.html">Презентации</a></li>
+                <li><a href="about.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="list">
+            <div class="beer">
+                <img src="images/beer1.png" alt="1">
+                <div class="name"><a href="beers/rheubarbarum.html">Rheubarbarum cult</a></div>
+            </div>
+            <div class="beer">
+                <img src="images/beer2.png" alt="2">
+                <div class="name"><a href="beers/hiroshima.html">Hiroshima shadow</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        Телефон: 123456789
+        Россия, г. Санкт-Петербург
+        <div class="map" onclick="showMap()">Карта</div>
+        <dialog class="map-dialog">
+            <div class="inner">
+                <img src="images/map.png" alt="map">
+                <br>
+                <div class="close" onclick="closeMap()">Close</div>
+            </div>
+        </dialog>
+        <br>
+        design by polina
+    </div>
+</div>
+<div class="interactive scroll-up" onclick="scrollUp()">
+    <i class="fa fa-chevron-up"></i>
+</div>
+<div class="interactive mail-button" onclick="disable()">
+    <i class="fa fa-envelope-square"></i>
+</div>
+</body>
+<script>
+    showSlides(slideIndex);
+</script>
+<script src="js/scrollUp.js"></script>
+<script src="js/mailForm.js"></script>
+</html>

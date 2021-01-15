@@ -1,0 +1,282 @@
+body {
+    background-image: url("../images/new_background.png");
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: Corbel, monospace;
+    margin:0
+}
+
+.body {
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title,
+.main {
+    background-color: white;
+    border: black solid 4px;
+
+}
+
+.title {
+    height: 50px;
+}
+
+h1 {
+    margin: 5px 0 5px 15px;
+}
+
+.contacts {
+    width: 30%;
+    height: 100%;
+    float: right;
+    background-color: black;
+}
+
+.contacts img {
+    height: 70%;
+    margin: 2% 2% 2% 6%;
+}
+
+nav {
+    margin: 7px 0 7px 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigate {
+    height: 37px;
+    background-color: black;
+    padding: 5px 20px;
+    margin: 5px 0;
+}
+
+.navigate li{
+    margin: 3px 25px;
+    display: inline;
+}
+
+.navigate a {
+    color: white;
+    font-size: large;
+    padding: 2px;
+    margin: 5px;
+}
+
+.navigate a:hover, .map:hover, .close:hover{
+    background-color: rgba(51, 163, 139,0.6);
+}
+
+.selected {
+    background-color: rgba(51, 163, 139,0.6);
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    z-index: 2;
+    margin: 5px 0;
+}
+
+.gallery {
+}
+
+* {box-sizing: border-box}
+.slides {display: none}
+.first-slide {display: block}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.gallery img {
+    width: 80%;
+    margin: 3% 10%;
+    vertical-align: middle;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.prev, .next, .new .name, .navigate a, .map, .close {
+    cursor: pointer;
+    transition: 0.6s ease;
+    border-radius: 3px;
+}
+
+.prev, .next, .new .name {
+    color: black;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover, .new .name:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.disable {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    z-index: 10;
+    background-color: black;
+    opacity: 70%;
+    cursor: pointer;
+    display: none;
+}
+
+.dots {
+    text-align:center;
+}
+
+.news-title, .beer-title, .feedback {
+    margin: 30px 0;
+    padding: 0 30px;
+    width: 100%;
+    border-bottom: black solid 3px;
+    border-top: black solid 3px;
+    font-size: large;
+}
+
+.news, .beer-card, .list {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.beer {
+    border: black solid 2px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 26%;
+}
+
+.beer img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.beer .name, .map, .close {
+    padding: 3px;
+    margin: 2px;
+}
+
+.end {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 3%;
+}
+
+.map, .close {
+    width: 55px;
+    border: white solid 2px;
+}
+
+dialog {
+    position: fixed;
+    background-color: black;
+    padding: 30px;
+    width: 40%;
+    height: 70%;
+    color: white;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+dialog .inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+dialog img {
+    width: 87%;
+}
+
+dialog .close {
+    left: 50%;
+}
+
+.beer a, .title a {
+    color: black;
+}
+
+.pictures {
+    margin: 0 5%;
+}
+
+.pictures img {
+    height: 200px;
+    margin: 5px;
+}
+
+.pictures .picture3 {
+    width: 420px;
+    height: auto;
+}
+
+.description {
+    text-align: center;
+    margin: 15% 5% 20% 5%;
+    font-size: large;
+}
